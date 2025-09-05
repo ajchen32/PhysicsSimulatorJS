@@ -2,36 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Physics Simulator JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
-        #simulatorCanvas { display: block; margin: 40px auto; background: #fff; border: 1px solid #ccc; }
-    </style>
+    <title>Physics Collision Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 style="text-align:center;">Physics Simulator JS</h1>
-    <canvas id="simulatorCanvas" width="800" height="600"></canvas>
-    <script>
-        const canvas = document.getElementById('simulatorCanvas');
-        const ctx = canvas.getContext('2d');
+    <h1>Physics Collision Simulator</h1>
+    <p>Press Anywhere To Drop A Ball</p>
 
-        // Example: Draw a ball
-        function drawBall(x, y, radius) {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.beginPath();
-            ctx.arc(x, y, radius, 0, Math.PI * 2);
-            ctx.fillStyle = '#3498db';
-            ctx.fill();
-            ctx.closePath();
-        }
-
-        // Initial ball position
-        let ballX = canvas.width / 2;
-        let ballY = canvas.height / 2;
-        let ballRadius = 30;
-
-        drawBall(ballX, ballY, ballRadius);
-    </script>
+    <div id="myBall"></div>
 </body>
+
+
+
+
+
+
+
+
+
+
+
 </html>
